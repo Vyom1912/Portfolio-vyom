@@ -447,6 +447,9 @@ a {
 
 /* ------------------------------------------------------- */
 /* contect */
+.contect .heading{
+  margin-bottom:40px;
+}
 .contect .container .c-box {
   flex-wrap: wrap;
   gap: 3rem;
@@ -468,7 +471,7 @@ a {
 .c-left .form .input-field textarea {
   outline: none;
   width: 90%;
-  margin: 10px 5%;
+  margin: 6px 5%;
   /* border: 0; */
   border: 1.5px solid transparent;
   border-radius: 5px;
