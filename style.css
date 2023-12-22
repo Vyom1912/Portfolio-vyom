@@ -9,11 +9,11 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  background-image: url(image/6.png);
+/*   background-image: url(image/6.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center; */
   font-size: 100%;
   font-family: "Inter", sans-serif;
 }
