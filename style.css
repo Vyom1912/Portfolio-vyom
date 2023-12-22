@@ -4,25 +4,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-  -webkit-tap-highlight-color: transparent;
-}
-body {
-/*   background-image: url(image/6.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center; */
-  font-size: 100%;
-  font-family: "Inter", sans-serif;
-}
 :root {
   --dark-brown: #543324;
   --mid-brown: #a88f83;
   --light-brown: #ebe4dd;
   --gray: #3b5060;
   --white: #fff;
+}
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-size: 100%;
+  font-family: "Inter", sans-serif;
 }
 /* 
 font-family: 'Inter', sans-serif;
@@ -39,7 +34,7 @@ h1 {
   text-transform: uppercase;
 }
 h2 {
-  font-family: "Kodchasan", sans-serif;
+  font-family: "Mooli", sans-serif;
   font-size: 1.5rem;
   color: var(--gray);
 }
@@ -280,6 +275,7 @@ a {
 }
 .info-box .info-content .info {
   margin: 0 0 1rem;
+  width: 20rem;
 }
 .info-box .info-content .info h3 {
   margin: 0 0 0.6rem 0;
@@ -303,6 +299,7 @@ a {
   justify-content: center;
 }
 .about .container .info-box {
+  width: 100%;
   justify-content: flex-start;
 }
 .about .hobby {
@@ -322,20 +319,21 @@ a {
   height: 40px;
 }
 /* resume */
-.resume .info-content:nth-child(3) .info h3 {
+.about .info-content:nth-child(3) .info p {
   position: relative;
+  width: 17, 3rem;
   font-size: 1.2rem;
   left: 0;
   width: 100%;
   text-align: left;
 }
-.resume .info-content:nth-child(3) .info .percentage,
-.resume .info-content:nth-child(3) .info .html,
-.resume .info-content:nth-child(3) .info .css,
-.resume .info-content:nth-child(3) .info .js,
-.resume .info-content:nth-child(3) .info .bootstrap,
-.resume .info-content:nth-child(3) .info .php,
-.resume .info-content:nth-child(3) .info .react {
+.about .info-content:nth-child(3) .info .percentage,
+.about .info-content:nth-child(3) .info .html,
+.about .info-content:nth-child(3) .info .css,
+.about .info-content:nth-child(3) .info .js,
+.about .info-content:nth-child(3) .info .bootstrap,
+.about .info-content:nth-child(3) .info .php,
+.about .info-content:nth-child(3) .info .react {
   display: inline;
   width: 62%;
   height: 10px;
@@ -346,58 +344,36 @@ a {
   background-color: var(--light-brown);
 }
 
-.resume .info-content:nth-child(3) .info .html,
-.resume .info-content:nth-child(3) .info .css,
-.resume .info-content:nth-child(3) .info .js,
-.resume .info-content:nth-child(3) .info .bootstrap,
-.resume .info-content:nth-child(3) .info .php,
-.resume .info-content:nth-child(3) .info .react {
+.about .info-content:nth-child(3) .info .html,
+.about .info-content:nth-child(3) .info .css,
+.about .info-content:nth-child(3) .info .js,
+.about .info-content:nth-child(3) .info .bootstrap,
+.about .info-content:nth-child(3) .info .php,
+.about .info-content:nth-child(3) .info .react {
   top: 0;
   position: absolute;
   left: 0;
   background-color: var(--dark-brown);
 }
-.resume .info-content:nth-child(3) .info .html {
+.about .info-content:nth-child(3) .info .html {
   width: 90%;
 }
-.resume .info-content:nth-child(3) .info .css {
+.about .info-content:nth-child(3) .info .css {
   width: 75%;
 }
-.resume .info-content:nth-child(3) .info .js {
+.about .info-content:nth-child(3) .info .js {
   width: 50%;
 }
-.resume .info-content:nth-child(3) .info .bootstrap {
+.about .info-content:nth-child(3) .info .bootstrap {
   width: 40%;
 }
-.resume .info-content:nth-child(3) .info .php {
+.about .info-content:nth-child(3) .info .php {
   width: 30%;
 }
-.resume .info-content:nth-child(3) .info .react {
+.about .info-content:nth-child(3) .info .react {
   width: 10%;
 }
-.resume .info-content:nth-child(3) {
-  width: fit-content;
-  z-index: -1;
-  /* background-color: #a88f83; */
-}
 
-/* --------------------- */
-/* add */
-
-.ad {
-  background-color: var(--dark-brown);
-  padding: 40px 0;
-  gap: 1.5rem;
-}
-.ad h2 {
-  color: var(--white);
-}
-.ad a {
-  color: var(--dark-brown);
-}
-.ad .btn:hover {
-  background-color: var(--light-brown);
-}
 /* --------------------- */
 /* portfolio */
 
@@ -406,6 +382,9 @@ a {
   justify-content: center;
   gap: 1.8rem;
 }
+.portfolio .more-project h2 {
+  margin-top: 2rem;
+}
 .project .p-item {
   /* padding: 1.5rem;
   gap: 2rem;
@@ -413,6 +392,7 @@ a {
   border-radius: 8px;
   overflow: hidden;
   gap: 1.5rem;
+  border: 1.5px solid var(--dark-brown);
   transition: all 0.3s ease-in-out;
 }
 .project .p-item:hover,
@@ -528,7 +508,7 @@ a {
   justify-content: flex-start;
 }
 .c-right .my-info {
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
   gap: 1.4rem;
 }
@@ -542,8 +522,8 @@ a {
   gap: 1rem;
 }
 .contect img {
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 2rem;
+  height: 2rem;
   transition: all 0.3s ease-in-out;
 }
 .contect .social-icone img:hover {
