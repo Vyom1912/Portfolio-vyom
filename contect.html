@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/hero-img.png" type="ico" />
+    <title>VYOM - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <!-- font awessome link -->
+    <script
+      src="https://kit.fontawesome.com/dd0de70807.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .contect {
+        /* min-width: 60%; */
+        width: 65%;
+        margin: auto;
+      }
+      @media only screen and (max-width: 1200px) {
+        .contect {
+          width: 70%;
+        }
+      }
+      @media only screen and (max-width: 1000px) {
+        .contect {
+          width: 75%;
+        }
+      }
+      @media only screen and (max-width: 8500px) {
+        .contect {
+          width: 80%;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        .contect {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- hire me -->
+    <section class="contect flex" id="contect" style="">
+      <div class="container reveal flex flex-c align-top">
+        <div class="heading" id="contect-1">
+          <h1>HIRE ME</h1>
+        </div>
+        <div class="c-box flex align-top">
+          <div class="c-left flex flex-c align-top">
+            <div class="heading">
+              <h2>Send Message</h2>
+            </div>
+            <form
+              action="https://formspree.io/f/xgejdaoq"
+              method="POST"
+              class="form flex flex-c align-top"
+            >
+              <div class="input-field">
+                <input
+                  type="text"
+                  name="name"
+                  id=""
+                  placeholder="Your Name*"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  type="email"
+                  name="email"
+                  id=""
+                  placeholder="Your Email*"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  type="text"
+                  name="subject"
+                  id=""
+                  placeholder="Subject*"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="6"
+                  placeholder="Message*"
+                  autocomplete="off"
+                  required
+                ></textarea>
+              </div>
+              <button class="btn">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

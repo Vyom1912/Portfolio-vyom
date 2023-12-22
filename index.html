@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/hero-img.png" type="ico" />
+    <title>VYOM - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <!-- font awessome link -->
+    <script
+      src="https://kit.fontawesome.com/dd0de70807.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onload="myFunction()">
+    <!-- ---------------------------------------------------------- -->
+    <div id="loader"></div>
+    <div class="animate-bottom" id="myDiv">
+      <!-- ---------------------------------------------------------- -->
+      <section class="hero flex" id="hero">
+        <div class="container flex">
+          <div class="hero-left flex flex-c align-top">
+            <span class="main-title"
+              >Hello, I am <br />
+              <span class="title">VYOM PATEL</span></span
+            >
+            <p>Frond end Designer | Developer</p>
+          </div>
+          <div class="hero-right">
+            <img src="image/hero-img.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- navbar -->
+      <header class="header" id="header">
+        <div class="center">
+          <nav class="navbar flex h-nav-resp">
+            <ul class="navbar-nav brand">
+              <img
+                src="image/nav-img.png"
+                alt=""
+                class="brand-img"
+                id="brand-img"
+              />
+              <li class="brand-txt" id="brand-txt">
+                <h5 class="brand-title">VYOM PATEL</h5>
+                <div class="brand-subtitle">Web Designer | Developer</div>
+              </li>
+            </ul>
+            <ul class="navlist flex v-class-resp">
+              <li><a href="#hero">home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#resume">resume</a></li>
+              <li><a href="#portfolio">portfolio</a></li>
+              <li><a href="#contect">contect</a></li>
+              <li>
+                <!-- <button class="btn"><a href="#contect-1">hire me</a></button> -->
+                <a href="contect.html" target="_blank"
+                  ><button class="btn">hire me</button></a
+                >
+
+                <!-- <button class="btn">hire me</button> -->
+              </li>
+            </ul>
+            <div class="burger flex flex-c">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- about -->
+      <section class="about flex" id="about">
+        <div class="container reveal flex flex-c">
+          <div class="heading">
+            <h1>about me</h1>
+          </div>
+          <div class="info-box flex align-top">
+            <div class="info-content">
+              <div class="heading">
+                <h3>Personal info</h3>
+              </div>
+              <div class="info">
+                <p>Name : PATEL VYOM BIPINKUMAR</p>
+                <p>Birth Of Date : 19/12/2002</p>
+                <p>Address : Himatnagar Gujarat, Bharat</p>
+                <p>Phone : 56565 67890</p>
+                <p>Email : vyom1912@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-content">
+              <div class="heading">
+                <h3>My Expertise</h3>
+              </div>
+              <div class="info">
+                <p>web development</p>
+                <p>web design</p>
+                <p>logo design</p>
+                <p>template design</p>
+              </div>
+            </div>
+          </div>
+          <div class="hobby flex">
+            <div class="h-item flex">
+              <!-- <i class="fa-solid fa-headphones"></i> -->
+              <img src="image/icone/Headphones.png" alt="" />
+              <p>MUSIC</p>
+            </div>
+            <div class="h-item flex">
+              <!-- <i class="fa-solid fa-film"></i> -->
+              <img src="image/icone/Cinema.png" alt="" />
+              <p>MOVIE</p>
+            </div>
+            <div class="h-item flex">
+              <!-- <i class="fa-solid fa-gamepad"></i> -->
+              <img src="image/icone/Xbox Controller.png" alt="" />
+              <p>GAME</p>
+            </div>
+            <div class="h-item flex">
+              <!-- <i class="fa-solid fa-headphones"></i> -->
+              <img src="image/icone/Party.png" alt="" />
+              <p>PARTY</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- resume -->
+      <section class="resume flex" id="resume">
+        <div class="container reveal flex flex-c">
+          <div class="heading">
+            <h1>MY RESUME</h1>
+          </div>
+          <div class="info-box flex align-top">
+            <div class="info-content">
+              <div class="heading">
+                <h2>Experience</h2>
+              </div>
+              <div class="info flex flex-c">
+                <h3>
+                  BrainyBeam Info-Tech Pvt. Ltd | Internship <br /><span
+                    >2023</span
+                  >
+                </h3>
+                <ul>
+                  <p>It is in the field of Web Design With React JS</p>
+                  <p>Duration : 15 days</p>
+                  <p>
+                    Project : JOOGAD: AN E-COMMERCE APPLICATION FOR THE GROCERY
+                    AND VEGETABLES
+                  </p>
+                </ul>
+              </div>
+            </div>
+            <div class="info-content">
+              <div class="heading">
+                <h2>Education</h2>
+              </div>
+              <div class="info flex flex-c align-top">
+                <h3>B.E Computer Engineering <br /><span>2020-2024</span></h3>
+                <p>
+                  I am in 4th year of my Degree from GOVERNMENT ENGINEERING
+                  COLLAGE MODASA.
+                </p>
+                <p>CGPA : 7.65 ( up to sem:6 )</p>
+              </div>
+              <div class="info flex flex-c align-top">
+                <h3>
+                  HSC in science stream <br />Faith higher secondary school
+                  <br /><span>2020</span>
+                </h3>
+                <p>Achieved 70% (GSEB Board) in 12th</p>
+              </div>
+            </div>
+            <div class="info-content">
+              <div class="info-content">
+                <div class="heading">
+                  <h2>Skills</h2>
+                </div>
+                <div class="info flex flex-c">
+                  <h3>
+                    HTML
+                    <span class="percentage"><span class="html"></span></span>
+                  </h3>
+                  <h3>
+                    CSS
+                    <span class="percentage"><span class="css"></span></span>
+                  </h3>
+                  <h3>
+                    JAVASCRIPT
+                    <span class="percentage"><span class="js"></span></span>
+                  </h3>
+                  <h3>
+                    BOOTSTRAP
+                    <span class="percentage"
+                      ><span class="bootstrap"></span
+                    ></span>
+                  </h3>
+                  <h3>
+                    PHP
+                    <span class="percentage"><span class="php"></span></span>
+                  </h3>
+                  <h3>
+                    REACT JS
+                    <span class="percentage"><span class="react"></span></span>
+                  </h3>
+                </div>
+              </div>
+              <div class="info-content">
+                <div class="heading">
+                  <h2>Language</h2>
+                </div>
+                <div class="info flex">
+                  <div class="i-item">English</div>
+                  <div class="i-item">Hindi</div>
+                  <div class="i-item">Gujarati</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- add -->
+      <section class="ad flex flex-c">
+        <h2>I Am Available For FreeLance</h2>
+        <button class="btn">
+          <a href="contect.html" target="_blank">hire me</a>
+        </button>
+      </section>
+      <!-- portfolio -->
+      <section class="portfolio flex" id="portfolio">
+        <div class="container reveal flex flex-c">
+          <div class="heading">
+            <h1>MY PORTFOLIO</h1>
+          </div>
+          <div class="project flex">
+            <div class="p-item flex flex-c">
+              <a
+                href="https://vyom1912.github.io/Resume-Builder/"
+                target="”_blank”"
+              >
+                <div class="p-img flex">
+                  <img src="image/project/Resume.png" alt="" />
+                </div>
+                <div class="p-name">Resume Builder</div></a
+              >
+            </div>
+            <div class="p-item flex flex-c">
+              <a
+                href="https://vyom1912.github.io/Code-Editor/ "
+                target="_blank"
+              >
+                <div class="p-img">
+                  <img src="image/project/Code Editor.png" alt="" />
+                </div>
+                <div class="p-name">Code Editor</div>
+              </a>
+            </div>
+            <div class="p-item flex flex-c">
+              <a
+                href="https://vyom1912.github.io/Notes-Maker/"
+                target="”_blank”"
+              >
+                <div class="p-img flex">
+                  <img src="image/project/patelkeep.png" alt="" />
+                </div>
+                <div class="p-name">To Do List</div></a
+              >
+            </div>
+            <div class="p-item flex flex-c">
+              <a
+                href="https://vyom1912.github.io/TIC-TAC-TOE-GAME/ "
+                target="_blank"
+              >
+                <div class="p-img">
+                  <img src="image/project/XO.png" alt="" />
+                </div>
+                <div class="p-name">Tic Toc Toe : GAME</div>
+              </a>
+            </div>
+          </div>
+          <div class="more-project flex flex-c">
+            <div class="heading">
+              <h2>Some More Projects</h2>
+            </div>
+            <div class="project-grid">
+              <a
+                class="p-list"
+                href="https://vyom1912.github.io/Quiz--front-end-development/ "
+                target="_blank"
+              >
+                <div class="p-icone">
+                  <img src="image/icone/Test Results.png" alt="" />
+                </div>
+                <div class="p-list-name">Quiz</div>
+              </a>
+              <a
+                class="p-list"
+                href="https://vyom1912.github.io/Dad-jokes/ "
+                target="_blank"
+              >
+                <div class="p-icone">
+                  <img src="image/icone/LOL.png" alt="" />
+                </div>
+                <div class="p-list-name">Dad Jokes</div>
+              </a>
+              <a
+                class="p-list"
+                href="https://vyom1912.github.io/Calculator/ "
+                target="_blank"
+              >
+                <div class="p-icone">
+                  <img src="image/icone/Calculator.png" alt="" />
+                </div>
+                <div class="p-list-name">Calculator</div>
+              </a>
+              <a
+                class="p-list"
+                href="https://vyom1912.github.io/Analog-colck/ "
+                target="_blank"
+              >
+                <div class="p-icone">
+                  <img src="image/icone/Clock.png" alt="" />
+                </div>
+                <div class="p-list-name">Analog Clock</div>
+              </a>
+              <a
+                class="p-list"
+                href="https://vyom1912.github.io/Landing-Page-CodeAchieve/ "
+                target="_blank"
+              >
+                <div class="p-icone">
+                  <img src="image/icone/Web.png" alt="" />
+                </div>
+                <div class="p-list-name">Landing Page</div>
+              </a>
+              <a
+                class="p-list"
+                href="https://vyom1912.github.io/Starbuck-frontend-development/  "
+                target="_blank"
+              >
+                <div class="p-icone">
+                  <img src="image/icone/Starbucks.png" alt="" />
+                </div>
+                <div class="p-list-name">Starbucks Page</div>
+              </a>
+              <a class="p-list" href="image/CodeBurning.png" target="_blank">
+                <div class="p-icone">
+                  <img src="image/icone/Art Therapist.png" alt="" />
+                </div>
+                <div class="p-list-name">Website Design</div>
+              </a>
+              <a class="p-list" href="image/logo Design.png" target="_blank">
+                <div class="p-icone">
+                  <img src="image/icone/Design.png" alt="" />
+                </div>
+                <div class="p-list-name">Logo Disign</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contect -->
+      <section class="contect flex" id="contect">
+        <div class="container reveal flex flex-c align-top">
+          <div class="heading" id="contect-1">
+            <h1>CONTECT ME</h1>
+          </div>
+          <div class="c-box flex align-top">
+            <div class="c-left flex flex-c align-top">
+              <div class="heading">
+                <h2>Send Message</h2>
+              </div>
+              <form
+                action="https://formspree.io/f/xgejdaoq"
+                method="POST"
+                class="form flex flex-c align-top"
+              >
+                <div class="input-field">
+                  <input
+                    type="text"
+                    name="name"
+                    id=""
+                    placeholder="Your Name*"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <input
+                    type="email"
+                    name="email"
+                    id=""
+                    placeholder="Your Email*"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <input
+                    type="text"
+                    name="subject"
+                    id=""
+                    placeholder="Subject*"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="6"
+                    placeholder="Message*"
+                    autocomplete="off"
+                    required
+                  ></textarea>
+                </div>
+                <button class="btn">SUBMIT</button>
+              </form>
+            </div>
+            <div class="c-right flex flex-c align-top">
+              <div class="heading"><h2>Get In Touch</h2></div>
+              <div class="my-info flex flex-c align-top">
+                <div class="c-item flex">
+                  <img src="image/icone/iPhone SE.png" alt="" />
+                  <h3>+91 1234567890</h3>
+                </div>
+                <div class="c-item flex">
+                  <img src="image/icone/Email.png" alt="" />
+                  <h3>vyom1912@gmail.om</h3>
+                </div>
+                <div class="c-item flex">
+                  <img src="image/icone/Location.png" alt="" />
+                  <h3>himmatnagar, gujarat, bharat</h3>
+                </div>
+              </div>
+
+              <div class="social-icone flex">
+                <a
+                  href="https://www.facebook.com/vyom.patel.3532?mibextid=ZbWKwL "
+                  target="_blank"
+                  ><img src="image/icone/Facebook.png" alt=""
+                /></a>
+                <a href="https://www.instagram.com/vyom_1912/" target="_blank"
+                  ><img src="image/icone/Instagram.png" alt=""
+                /></a>
+                <a href="https://github.com/Vyom1912" target="_blank"
+                  ><img src="image/icone/GitHub.png" alt=""
+                /></a>
+                <a
+                  href="https://x.com/vyom1912?t=ITffElFlPkpTo8nmE2UVxw&s=09"
+                  target="_blank"
+                  ><img src="image/icone/TwitterX.png" alt=""
+                /></a>
+                <a
+                  href="www.linkedin.com/in/
+                vyom-patel-87941b278"
+                  target="_blank"
+                  ><img src="image/icone/LinkedIn.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ----------------------------- -->
+      <!-- footer -->
+      <footer class="footer flex">
+        <h3>copy right owned by VYOM PATEL</h3>
+      </footer>
+      <!-- --------------------------------------- -->
+      <!-- scroll button  -->
+      <!-- --------------------------------------- -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
