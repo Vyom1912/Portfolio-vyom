@@ -142,7 +142,7 @@ a {
 .header {
   width: 100%;
   margin: 50px 0 0;
-  padding: 10px 0;
+  padding: 25px 0;
   background: var(--gray);
   text-transform: uppercase;
   font-family: Inter;
@@ -162,21 +162,8 @@ a {
   position: relative;
 }
 
-.navlist li:nth-child(3) {
+.navlist li:nth-child(2) {
   margin: 0 210px 0 0;
-}
-
-.navlist li:nth-child(6) a {
-  color: var(--gray);
-  padding: 0;
-  margin: 0;
-  align-items: center;
-}
-.navlist li:nth-child(6) a:hover {
-  color: var(--white);
-}
-.navlist li:nth-child(6) a:hover::after {
-  opacity: 0;
 }
 .navlist li a {
   padding: 0.6rem 1rem;
@@ -229,6 +216,7 @@ a {
   border-radius: 50%;
 }
 #brand-txt {
+  margin-left: 0.7rem;
   color: #fff;
   text-align: center;
 }
@@ -258,6 +246,7 @@ a {
 .header .btn {
   /* padding: 4px 7px; */
   font-size: 1rem;
+  margin-bottom: 2rem;
 }
 /* ---------------------------------------------- */
 /* about and resume */
@@ -385,9 +374,6 @@ a {
   margin-top: 2rem;
 }
 .project .p-item {
-  /* padding: 1.5rem;
-  gap: 2rem;
-  background-color: var(--mid-brown);*/
   border-radius: 8px;
   overflow: hidden;
   gap: 1.5rem;
@@ -446,9 +432,6 @@ a {
 
 /* ------------------------------------------------------- */
 /* contect */
-.contect .heading{
-  margin-bottom:40px;
-}
 .contect .container .c-box {
   flex-wrap: wrap;
   gap: 3rem;
@@ -470,7 +453,7 @@ a {
 .c-left .form .input-field textarea {
   outline: none;
   width: 90%;
-  margin: 6px 5%;
+  margin: 10px 5%;
   /* border: 0; */
   border: 1.5px solid transparent;
   border-radius: 5px;
