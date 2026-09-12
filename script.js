@@ -120,6 +120,16 @@ const skills = [
 ];
 
 const projects = [
+    {
+    title: "Makewell Agri Equipments Website",
+    type: "frontend",
+    label: "Frontend",
+    img: "image/MakeWell.png",
+    tools: ["React.js", "Tailwind CSS", "JavaScript", "Figma"],
+    desc: "Developed a responsive multi-page website for Makewell Agri Equipments using React and Tailwind CSS, featuring product showcases, detailed product information, quotation request functionality, company profiles, smooth navigation, and a client-focused, mobile-first experience optimised for performance and accessibility.",
+    github: "",
+    live: "https://vyom1912.github.io/Makewell-Agri-Equipments/",
+  },
   {
     title: "PublishPro- A Blogging Platform",
     type: "fullstack",
@@ -140,16 +150,6 @@ const projects = [
     live: "https://publishpro-a-blogging-platform.onrender.com/",
   },
   {
-    title: "FoodZing",
-    type: "frontend",
-    label: "Frontend",
-    img: "image/FoodZing.png",
-    tools: ["React.js", "Firebase", "CSS", "Figma"],
-    desc: "Responsive food ordering web app with Firebase authentication, real-time Firestore database, cart management, and a clean category-based menu UI across all devices.",
-    github: "https://github.com/Vyom1912/FoodZing-A-Food-Ordering-Website.git",
-    live: "https://vyom1912.github.io/FoodZing-A-Food-Ordering-Website/",
-  },
-  {
     title: "URL Shortener",
     type: "fullstack",
     label: "Full Stack",
@@ -159,17 +159,27 @@ const projects = [
     github: "https://github.com/Vyom1912/urlShortener.git",
     live: "https://urlshortener-1osn.onrender.com/",
   },
-
   {
-    title: "Rakhi Store",
+    title: "FoodZing",
     type: "frontend",
     label: "Frontend",
-    img: "image/RakhiStore.png",
-    tools: ["React.js", "CSS", "React Router", "Figma"],
-    desc: "Freelance e-commerce website for handmade rakhis with multi-page routing, cart functionality, SEO-friendly meta tags, and live deployment on a custom domain via Hostinger.",
-    github: "https://github.com/Vyom1912/A-Rakhi-Store.git",
-    live: "https://vyom1912.github.io/A-Rakhi-Store/",
+    img: "image/FoodZing.png",
+    tools: ["React.js", "Firebase", "CSS", "Figma"],
+    desc: "Responsive food ordering web app with Firebase authentication, real-time Firestore database, cart management, and a clean category-based menu UI across all devices.",
+    github: "https://github.com/Vyom1912/FoodZing-A-Food-Ordering-Website.git",
+    live: "https://vyom1912.github.io/FoodZing-A-Food-Ordering-Website/",
   },
+
+  // {
+  //   title: "Rakhi Store",
+  //   type: "frontend",
+  //   label: "Frontend",
+  //   img: "image/RakhiStore.png",
+  //   tools: ["React.js", "CSS", "React Router", "Figma"],
+  //   desc: "Freelance e-commerce website for handmade rakhis with multi-page routing, cart functionality, SEO-friendly meta tags, and live deployment on a custom domain via Hostinger.",
+  //   github: "https://github.com/Vyom1912/A-Rakhi-Store.git",
+  //   live: "https://vyom1912.github.io/A-Rakhi-Store/",
+  // },
   // {
   //   title: "Music Player",
   //   type: "frontend",
@@ -180,16 +190,16 @@ const projects = [
   //   github: "https://github.com/Vyom1912/Music-Player.git",
   //   live: "https://vyom1912.github.io/Music-Player/",
   // },
-  // {
-  //   title: "The Maroons — Landing Page",
-  //   type: "frontend",
-  //   label: "Frontend",
-  //   img: "image/TheMaroons.png",
-  //   tools: ["HTML", "CSS", "JavaScript"],
-  //   desc: 'Modern, animated startup landing page for "The Maroons" with smooth scroll animations, service/contact sections, and immersive Diwali-themed particle background.',
-  //   github: "https://github.com/Vyom1912/TheMaroons.git",
-  //   live: "https://vyom1912.github.io/TheMaroons/",
-  // },
+  {
+    title: "The Maroons — Landing Page",
+    type: "frontend",
+    label: "Frontend",
+    img: "image/TheMaroons.png",
+    tools: ["HTML", "CSS", "JavaScript"],
+    desc: 'Modern, animated startup landing page for "The Maroons" with smooth scroll animations, service/contact sections, and immersive Diwali-themed particle background.',
+    github: "https://github.com/Vyom1912/TheMaroons.git",
+    live: "https://vyom1912.github.io/TheMaroons/",
+  },
   // {
   //   title: "Notes Maker (PatelKeeps)",
   //   type: "frontend",
@@ -222,29 +232,8 @@ window.addEventListener("load", () => {
 });
 
 /* ============================================================
-   THEME TOGGLE
+   THEME TOGGLE — removed (single fixed theme)
 ============================================================ */
-const html = document.documentElement;
-let isDark = localStorage.getItem("theme") !== "light";
-html.setAttribute("data-theme", isDark ? "dark" : "light");
-
-function toggleTheme() {
-  isDark = !isDark;
-  html.setAttribute("data-theme", isDark ? "dark" : "light");
-  localStorage.setItem("theme", isDark ? "dark" : "light");
-  document
-    .querySelectorAll(".toggle-thumb")
-    .forEach((t) => (t.textContent = isDark ? "☾" : "☀"));
-}
-document.getElementById("theme-toggle").addEventListener("click", toggleTheme);
-document
-  .getElementById("theme-toggle-mobile")
-  .addEventListener("click", toggleTheme);
-
-// Sync thumb icons on load
-document
-  .querySelectorAll(".toggle-thumb")
-  .forEach((t) => (t.textContent = isDark ? "☾" : "☀"));
 
 /* ============================================================
    NAVBAR — mobile burger
@@ -313,19 +302,56 @@ const brandTxt = document.getElementById("brand-txt");
 
 // Detect when navbar is stuck (hero has scrolled out of view)
 const heroSection = document.getElementById("hero");
-const stickyObserver = new IntersectionObserver(
-  ([entry]) => {
-    // When hero is NOT intersecting, navbar is stuck at top
-    const isStuck = !entry.isIntersecting;
-    navbar.classList.toggle("scrolled", isStuck);
-    if (brandImg) brandImg.style.display = isStuck ? "none" : "block";
-    if (brandTxt) brandTxt.style.opacity = isStuck ? "1" : "0";
-  },
-  { threshold: 0, rootMargin: "0px 0px 0px 0px" },
-);
-stickyObserver.observe(heroSection);
+const navbarPlaceholder = document.getElementById("navbar-placeholder");
+
+function updateNavbarFixed() {
+  // navbar's natural top offset from the document
+  const navbarTop = navbarPlaceholder.classList.contains("active")
+    ? navbar.offsetTop  // already fixed — use placeholder position
+    : navbar.getBoundingClientRect().top + window.scrollY;
+
+  const shouldFix = window.scrollY >= navbarTop;
+
+  if (shouldFix && !navbar.classList.contains("fixed")) {
+    navbar.classList.add("fixed", "scrolled");
+    navbarPlaceholder.classList.add("active");
+    if (brandImg) brandImg.style.display = "none";
+    if (brandTxt) brandTxt.style.opacity = "1";
+  } else if (!shouldFix && navbar.classList.contains("fixed")) {
+    navbar.classList.remove("fixed", "scrolled");
+    navbarPlaceholder.classList.remove("active");
+    if (brandImg) brandImg.style.display = "block";
+    if (brandTxt) brandTxt.style.opacity = "0";
+  }
+}
+
+// Store the navbar's natural offset once on load
+let navbarNaturalTop = null;
+window.addEventListener("load", () => {
+  navbarNaturalTop = navbar.getBoundingClientRect().top + window.scrollY;
+});
+
+function updateNavbarFixedStable() {
+  if (navbarNaturalTop === null) return;
+  const shouldFix = window.scrollY >= navbarNaturalTop;
+
+  if (shouldFix && !navbar.classList.contains("fixed")) {
+    navbar.classList.add("fixed", "scrolled");
+    navbarPlaceholder.classList.add("active");
+    if (brandImg) brandImg.style.display = "none";
+    if (brandTxt) brandTxt.style.opacity = "1";
+  } else if (!shouldFix && navbar.classList.contains("fixed")) {
+    navbar.classList.remove("fixed", "scrolled");
+    navbarPlaceholder.classList.remove("active");
+    if (brandImg) brandImg.style.display = "block";
+    if (brandTxt) brandTxt.style.opacity = "0";
+  }
+}
 
 window.addEventListener("scroll", () => {
+  // Fix navbar once it reaches the top
+  updateNavbarFixedStable();
+
   // Progress bar
   const scrolled =
     (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
@@ -360,18 +386,8 @@ const sbTxt = document.getElementById("sb-txt");
 const sbBurger = document.getElementById("sbBurger");
 const sbMobileNav = document.getElementById("sbMobileNav");
 const sbLinks = document.querySelectorAll(".sb-links a");
-const sbThemeBtn = document.getElementById("sb-theme-toggle");
-const sbThumb = document.querySelector(".sb-toggle-thumb");
 
-// Sync theme thumb on load
-if (sbThumb) sbThumb.textContent = isDark ? "☾" : "☀";
-if (sbThemeBtn)
-  sbThemeBtn.addEventListener("click", () => {
-    toggleTheme();
-    if (sbThumb) sbThumb.textContent = isDark ? "☾" : "☀";
-  });
-
-// Stuck detection — when hero leaves viewport, bar is stuck
+// Stuck detection for stickybar — when hero leaves viewport
 if (stickyBar) {
   const sbObserver = new IntersectionObserver(
     ([entry]) => {
@@ -382,7 +398,7 @@ if (stickyBar) {
     },
     { threshold: 0 },
   );
-  sbObserver.observe(heroSection);
+  sbObserver.observe(document.getElementById("hero"));
 }
 
 // Active link highlight (reuse scroll listener)
@@ -516,28 +532,70 @@ function renderProjects(filter) {
       card.setAttribute("data-aos", "fade-up");
       card.setAttribute("data-aos-delay", String(i * 80));
 
+      const githubBtn = p.github
+        ? `<a href="${p.github}" target="_blank" rel="noopener" class="project-link">
+             <i class="fa-brands fa-github"></i> Code
+           </a>`
+        : `<button class="project-link disabled" disabled title="Source code is private for this client project.">
+             <i class="fa-brands fa-github"></i> Private
+           </button>`;
+
       card.innerHTML = `
-      <div class="project-thumb">
-        <img src="${p.img}" alt="${p.title}" loading="lazy" onerror="this.style.display='none'" />
-        <div class="project-thumb-overlay"></div>
-        <div class="project-badge badge-${p.type}">${p.label}</div>
-      </div>
-      <div class="project-body">
-        <div class="project-title">${p.title}</div>
-        <p class="project-desc">${p.desc}</p>
-        <div class="project-tools">
-          ${p.tools.map((t) => `<span class="tool-chip">${t}</span>`).join("")}
+        <div class="project-thumb">
+          <img src="${p.img}" alt="${p.title}" loading="lazy" onerror="this.style.display='none'" />
+          <div class="project-thumb-overlay"></div>
+          <div class="project-badge badge-${p.type}">${p.label}</div>
         </div>
-        <div class="project-links">
-          <a href="${p.github}" target="_blank" rel="noopener" class="project-link">
-            <i class="fa-brands fa-github"></i> Code
-          </a>
-          <a href="${p.live}" target="_blank" rel="noopener" class="project-link primary">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-          </a>
+
+        <div class="project-body">
+          <div class="project-header">
+            <div class="project-title">${p.title}</div>
+          </div>
+
+          <!-- always visible on mobile: title row with expand icon + links -->
+          <div class="project-mobile-bar">
+            <div class="project-mobile-links">
+              ${githubBtn}
+              <a href="${p.live}" target="_blank" rel="noopener" class="project-link primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+              </a>
+            </div>
+            <button class="project-detail-toggle" aria-label="Show details" aria-expanded="false">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+
+          <!-- expandable details (hidden on mobile by default) -->
+          <div class="project-details" aria-hidden="true">
+            <p class="project-desc">${p.desc}</p>
+            <div class="project-tools">
+              ${p.tools.map((t) => `<span class="tool-chip">${t}</span>`).join("")}
+            </div>
+          </div>
+
+          <!-- desktop: links always visible -->
+          <div class="project-links project-links-desktop">
+            ${githubBtn}
+            <a href="${p.live}" target="_blank" rel="noopener" class="project-link primary">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
         </div>
-      </div>
-    `;
+      `;
+
+      // toggle handler
+      const toggleBtn = card.querySelector(".project-detail-toggle");
+      const details   = card.querySelector(".project-details");
+
+      toggleBtn.addEventListener("click", () => {
+        const expanded = toggleBtn.getAttribute("aria-expanded") === "true";
+        const opening  = !expanded;
+        toggleBtn.setAttribute("aria-expanded", String(opening));
+        details.setAttribute("aria-hidden",     String(!opening));
+        card.classList.toggle("details-open", opening);
+        toggleBtn.setAttribute("aria-label", opening ? "Hide details" : "Show details");
+      });
+
       pgrid.appendChild(card);
     });
   AOS.refresh();

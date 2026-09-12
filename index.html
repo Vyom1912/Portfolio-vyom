@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -153,7 +153,7 @@
             </div>
 
             <div class="float-badge badge-open">
-              <i class="fa-solid fa-circle-check" style="color: #10b981"></i>
+              <i class="fa-solid fa-circle-check" style="color: #3282b8"></i>
               <div>
                 <div style="font-size: 0.7rem; color: var(--text-muted)">
                   Status
@@ -171,18 +171,14 @@
     <!-- ============================================================
      NAVBAR
 ============================================================ -->
+    <div id="navbar-placeholder"></div>
     <nav id="navbar">
       <div class="nav-inner">
-        <!-- Brand -->
         <a href="#hero" class="nav-brand" id="navBrand">
           <div class="nav-avatar-wrap" id="brand-img-wrap">
             <div class="nav-avatar-ring-outer"></div>
             <div class="nav-avatar-ring-inner"></div>
-            <img
-              src="image/hero-img.png"
-              alt="Vyom Patel logo"
-              class="nav-avatar-img"
-              id="brand-img" />
+            <img src="image/hero-img.png" alt="Vyom Patel logo" class="nav-avatar-img" id="brand-img" />
           </div>
           <div class="nav-brand-text" id="brand-txt">
             <span class="nav-brand-name">VYOM PATEL</span>
@@ -196,14 +192,8 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <button id="theme-toggle" aria-label="Toggle theme">
-            <div class="toggle-thumb">☾</div>
-          </button>
         </ul>
         <div class="toggleBtn">
-          <button id="theme-toggle-mobile" aria-label="Toggle theme">
-            <div class="toggle-thumb">☾</div>
-          </button>
           <div class="burger" id="burger">
             <span></span><span></span><span></span>
           </div>
@@ -237,22 +227,13 @@
               <strong style="color: var(--accent)"
                 >Full Stack JavaScript Developer</strong
               >
-              and M.E. Computer Engineering student, passionate about crafting
-              practical, scalable, and user-friendly web applications from the
-              ground up.
+              and M.E. Computer Engineering student, focused on building products end-to-end — from database design to polished, responsive interfaces.
             </p>
             <p>
               My core stack is
-              <strong>React, Node.js, Express, and MongoDB</strong> — but I'm
-              equally comfortable working with Firebase, Appwrite, Prisma, and
-              modern tooling like Tailwind and TypeScript. I care deeply about
-              clean architecture, code quality, and great user experiences.
-            </p>
+              <strong>React, Node.js, Express, and MongoDB</strong>  and I'm equally comfortable with Firebase, Appwrite, Prisma, Tailwind, and TypeScript. I've shipped a production blogging platform with JWT auth and cloud media handling, a secure URL shortener with email verification, and a client-facing business website used by a real agri-equipment company.</p>
             <p>
-              I've built everything from full-featured authentication systems
-              with JWT & Argon2 to responsive e-commerce storefronts. I'm now
-              actively seeking a <strong>full-time role</strong> where I can
-              contribute, grow, and solve real-world problems.
+           I'm currently seeking a <strong>full-time Full Stack Developer role</strong> where I can own features end-to-end, write clean and testable code, and keep learning from a strong engineering team.
             </p>
           </div>
 
@@ -266,7 +247,7 @@
                 <div class="tl-sub">
                   LDRP Institute of Technology & Research
                 </div>
-                <span class="tl-gpa">CGPA: 8.96 · Pursuing</span>
+                <span class="tl-gpa">CGPA: 9.32 (up to sem 2) · Pursuing</span>
               </div>
 
               <div class="timeline-item">
@@ -350,26 +331,11 @@
     </section>
 
     <!-- ============================================================
-     SKILLS
-============================================================ -->
-    <section id="skills">
-      <div class="container">
-        <span class="section-label" data-aos="fade-up">02 / Skills</span>
-        <h2 class="section-title" data-aos="fade-up" data-aos-delay="60">
-          Tech <span class="highlight">Stack</span>
-        </h2>
-        <div class="divider" data-aos="fade-up" data-aos-delay="120"></div>
-
-        <div class="skills-grid" id="skillsGrid"></div>
-      </div>
-    </section>
-
-    <!-- ============================================================
      EXPERIENCE
 ============================================================ -->
     <section id="experience">
       <div class="container">
-        <span class="section-label" data-aos="fade-up">03 / Experience</span>
+        <span class="section-label" data-aos="fade-up">02 / Experience</span>
         <h2 class="section-title" data-aos="fade-up" data-aos-delay="60">
           Work <span class="highlight">Experience</span>
         </h2>
@@ -390,7 +356,7 @@
                 <li>
                   Built <strong>FoodZing</strong>, a fully responsive
                   food-ordering website using React.js and Firebase, with
-                  real-time database, user authentication, and mobile-first UI.
+                   user authentication, and mobile-first UI.
                 </li>
                 <li>
                   Implemented Firebase Auth, Firestore real-time sync, and cart
@@ -428,6 +394,21 @@
             </div>
           </div> -->
         </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     SKILLS
+============================================================ -->
+    <section id="skills">
+      <div class="container">
+        <span class="section-label" data-aos="fade-up">03 / Skills</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="60">
+          Tech <span class="highlight">Stack</span>
+        </h2>
+        <div class="divider" data-aos="fade-up" data-aos-delay="120"></div>
+
+        <div class="skills-grid" id="skillsGrid"></div>
       </div>
     </section>
 
